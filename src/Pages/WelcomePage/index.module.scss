@@ -1,0 +1,37 @@
+.welcomePageArea {
+  width: 100%;
+  padding: 50px 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  column-gap: 40px;
+  &__bigCardImg {
+    width: 50%;
+  }
+  &__detailArea {
+    flex: 1;
+    text-align: center;
+    &__logo {
+      width: 80%;
+      margin: 10px auto;
+    }
+    &__tittle {
+      width: 90%;
+      margin: 20px auto;
+    }
+    &__massege {
+      width: 90%;
+      margin: 15px auto;
+    }
+    &__inputArea {
+      width: 90%;
+      margin: 15px auto;
+    }
+    &__btnArea {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}

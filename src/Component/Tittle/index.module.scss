@@ -1,0 +1,7 @@
+.tittleArea {
+  width: 100%;
+  & > h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
