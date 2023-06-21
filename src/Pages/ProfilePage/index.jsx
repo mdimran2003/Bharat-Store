@@ -7,16 +7,15 @@ import CommonBtn from "../../Component/CommonBtn";
 import userImg from "../../Assets/userImg.avif";
 import Logo from "../../Component/Logo";
 const ProfilePage = () => {
-  const [data, setData] = useState([]);
   const [inputValue, setInputValue] = useState({
     name: "",
     lastName: "",
     email: "",
     gender: "",
     dob: "",
-    mobileNo: "",
+    mobile: "",
     gstNo: "",
-    bankAccountNo: "",
+    bank: "",
     ifce: "",
   });
   const onInputfield = (event) => {
@@ -25,6 +24,7 @@ const ProfilePage = () => {
     let newData = {
       ...inputValue,
     };
+    console.log(newData);
     newData[id] = value;
     setInputValue(newData);
   };
@@ -65,7 +65,7 @@ const ProfilePage = () => {
                 <InputField lable="First Name" type="text" defaultValue={inputValue.name} id="name" onChange={onInputfield} />
                 <InputField lable="Email" type="email" defaultValue={inputValue.email} id="email" onChange={onInputfield} />
                 <InputField lable="Date of Birth" type="date" defaultValue={inputValue.dateOfBirth} id="dob" onChange={onInputfield} />
-                <InputField lable="GST No." type="text" defaultValue={inputValue.gstNo} id="gstNO" onChange={onInputfield} />
+                <InputField lable="GST No." type="text" defaultValue={inputValue.gstNo} id="gstNo" onChange={onInputfield} />
                 <InputField lable="IFSC" type="text" defaultValue={inputValue.ifce} id="ifce" onChange={onInputfield} />
               </div>
               <div>

@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  margin: auto;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  &__containt {
+    width: 40%;
+    color: #fff;
+    display: flex;
+    border: 2px solid gray;
+    column-gap: 20px;
+    padding: 5px;
+    &__image {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__tittle {
+      flex: 1;
+      text-align: center;
+      & > h1 {
+        margin-bottom: 15px;
+      }
+      & > p {
+        line-height: 24px;
+      }
+    }
+  }
+}

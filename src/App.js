@@ -1,9 +1,9 @@
 import "./App.css";
-import HomePage from "../src/Pages/HomePage";
+import BlogPage from "./InterviewProject";
 function App() {
   return (
     <>
-      <HomePage />
+      <BlogPage />
     </>
   );
 }

@@ -1,0 +1,14 @@
+.buttonArea {
+  & > button {
+    background-color: #000;
+    border: none;
+    margin: 3px;
+    & > i {
+      font-size: 25px;
+      color: #fff;
+      &:hover {
+        color: aquamarine;
+      }
+    }
+  }
+}
