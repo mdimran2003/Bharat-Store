@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import ShareButton from "./ShareBtn";
+import ShareBtn from "./ShareBtn";
 import img from "../Assets/userImg.avif";
 const BlogPage = () => {
   const pageUrl = window.location.href;
@@ -21,7 +21,7 @@ const BlogPage = () => {
         </div>
 
         {/* Share button */}
-        <ShareButton url={pageUrl} imageUrl={pageImageUrl} title={pageTitle} description={pageDescription} />
+        <ShareBtn url={pageUrl} imageUrl={pageImageUrl} title={pageTitle} description={pageDescription} />
       </div>
     </div>
   );

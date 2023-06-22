@@ -1,4 +1,5 @@
 .buttonArea {
+  // position: relative;
   & > button {
     background-color: #000;
     border: none;
@@ -8,6 +9,32 @@
       color: #fff;
       &:hover {
         color: aquamarine;
+      }
+    }
+  }
+  &__siteModal {
+    width: 40%;
+    background-color: #000;
+    border: 2px solid gray;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    padding: 10px;
+
+    & > span {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    & > div {
+      margin-bottom: 10px;
+      & > input {
+        width: 75%;
+        padding: 6px;
+      }
+      & > button {
+        width: 22%;
+        padding: 6px;
+        margin-left: 5px;
       }
     }
   }
